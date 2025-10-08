@@ -35,11 +35,15 @@ p{
     font-family: 'Mattone-Regular ';
 }
 
+
+/*TITULO*/
 .titulo{
     color: white;
     font-size: 125px;
     font-family: 'Wolfensteintitulo';
 }
+
+/*INFOS do JOGO*/
 
 .apresentaçao{
     background-color: #590202;
@@ -59,7 +63,6 @@ p{
   
 }
 
-
 .apresentaçao-img
 {
   flex: 1 1 300px;
@@ -76,7 +79,6 @@ p{
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
 }
 
-
 .apresentaçao-texto{
   flex: 2 1 500px;
   font-size: 30px;
@@ -90,8 +92,70 @@ p{
 }
 
 
+/*PARTE DOS PERSONAGENS E DAS INFOS*/
+.container {
+    display: flex;
+    height: 625px;
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Coluna esquerda */
+.personagens {
+    flex: 1;
+    background-color: #222;
+    padding: 20px;
+    border-right: 2px solid red;
+    overflow-y: auto;
+    scrollbar-width: none;  
+}
+
+.lista-personagens {
+   display: flex;
+    flex-direction: row; /* muda para linha */
+    gap: 15px;           
+    flex-wrap: wrap;  
+}
+
+.lista-personagens img {
+    width: 120px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lista-personagens img:hover {
+    border: 2px solid red;
+}
+
+/* Coluna direita */
+.infopersonagem {
+    flex: 2;
+    padding: 40px;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.infopersonagem img {
+    width: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
 
 
+
+
+
+
+
+
+/*footer*/
 .rodape {
     background-color: #000000;
     color: #EAEAEA;
@@ -117,8 +181,8 @@ p{
   }
   
   .footer-titulo {
-    font-family: 'Wolfensteinregular', sans-serif;
-    font-size: 100px;
+    font-family: 'Moretto', sans-serif;
+    font-size: 25px;
     color: #EAEAEA;
   }
   
