@@ -10,7 +10,10 @@
     font-family: 'Mattone'; 
     src: url('fontes/Mattone-Regular.otf') format('truetype'); 
   }
-
+  @font-face {
+    font-family: 'Wolfenstein'; 
+    src: url('fontes/3650-font.otf') format('truetype'); 
+  }
 
   * {
     margin: 0;
@@ -21,7 +24,9 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
   }
+  
 
   header.tit{
     margin-top: 10px;
@@ -46,7 +51,11 @@ p{
 /*INFOS do JOGO*/
 
 .apresentaçao{
-    background-color: #590202;
+    background-image: url('fundoMenu.png'); /* coloca o formato certo */
+  background-size: cover;      /* faz o fundo preencher a área */
+  background-position: center; /* centraliza a imagem */
+  background-repeat: no-repeat;/* evita repetição */
+  
     margin-top: 50px;
     margin-left: 200px;
     margin-right: 200px;
@@ -83,6 +92,7 @@ p{
   flex: 2 1 500px;
   font-size: 30px;
   padding-right: 75px;
+  color: azure;
 }
 
 .apresentacao-texto p{
@@ -98,7 +108,7 @@ p{
     height: 625px;
     background-color: #111;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Mattone';
 }
 
 /* Coluna esquerda */
@@ -140,10 +150,11 @@ p{
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 25px;
 }
 
 .infopersonagem img {
-    width: 400px;
+    width: 600px;
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -163,6 +174,10 @@ p{
     text-align: center;
     border-top: 2px solid #B80015;
     margin-top: 40px;
+    background-image: url('fundoMenu.png'); /* coloca o formato certo */
+  background-size: cover;      /* faz o fundo preencher a área */
+  background-position: center; /* centraliza a imagem */
+  background-repeat: no-repeat;/* evita repetição */
   }
   
   .img-footer {
